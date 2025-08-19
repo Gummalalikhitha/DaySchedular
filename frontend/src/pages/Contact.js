@@ -20,7 +20,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://dayschedular-backend.onrender.com/feedback", {
+      const response = await fetch("https://dayschedular-backend.onrender.com/api/feedback", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
