@@ -16,7 +16,7 @@ const TodoList = () => {
   const fetchTodos = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/todos", {
+      const res = await axios.get("https://dayschedular-backend.onrender.com/api/todos", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setTodos(res.data.tasks);
@@ -35,7 +35,7 @@ const TodoList = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:5000/api/todos",
+        "https://dayschedular-backend.onrender.com/api/todos",
         { text: task, date, taskTime},
     { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -53,7 +53,7 @@ const TodoList = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.put(
-        `http://localhost:5000/api/todos/${index}`,
+        `https://dayschedular-backend.onrender.com/api/todos/${index}`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -67,7 +67,7 @@ const TodoList = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.delete(
-        `http://localhost:5000/api/todos/${index}`,
+        `https://dayschedular-backend.onrender.com/api/todos/${index}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setTodos(res.data.tasks);
