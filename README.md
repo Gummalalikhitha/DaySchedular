@@ -41,19 +41,26 @@ Follow the steps below to run the project locally.
 ### Installation
  
 1. Clone the repository
+   ---
    ```bash
    git clone https://github.com/your-username/day-scheduler.git
    cd day-scheduler
+   
 2.Install dependencies
+---
    npm install
+   
 3.Set up environment variables
+---
    Create a .env file and configure the following:
    MONGO_URI=your_mongodb_connection_string
    PORT=5000
    JWT_SECRET=your_secret_key
    EMAIL_USER=your_email@example.com
    EMAIL_PASS=your_email_password_or_app_password
+   
 4.Start the server
+---
    npm start
 
 📌 Future Enhancements
