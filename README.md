@@ -39,9 +39,8 @@ Follow the steps below to run the project locally.
 - MongoDB setup (local or cloud)
 
 ### Installation
-
+ ```bash
 1. Clone the repository
-   ```bash
    git clone https://github.com/your-username/day-scheduler.git
    cd day-scheduler
 2.Install dependencies
