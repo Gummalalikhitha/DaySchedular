@@ -40,29 +40,24 @@ Follow the steps below to run the project locally.
 
 ### Installation
 
-1. Clone the repository  
+1. Clone the repository
    ```bash
    git clone https://github.com/your-username/day-scheduler.git
    cd day-scheduler
 2.Install dependencies
-```bash
-npm install
-
+   npm install
 3.Set up environment variables
-Create a .env file and configure the following:
-```bash
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-JWT_SECRET=your_secret_key
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_email_password_or_app_password
-
-```bash
-Start the server
-npm start
+   Create a .env file and configure the following:
+   MONGO_URI=your_mongodb_connection_string
+   PORT=5000
+   JWT_SECRET=your_secret_key
+   EMAIL_USER=your_email@example.com
+   EMAIL_PASS=your_email_password_or_app_password
+4.Start the server
+   npm start
 
 📌 Future Enhancements
-
+---
 📱 Push Notifications (browser & mobile)
 
 📅 Calendar Integration
@@ -74,11 +69,13 @@ npm start
 📨 Alternative to SMTP (e.g., SendGrid / Twilio SendGrid for production-safe email delivery)
 
 🤝 Contributing
+---
 Contributions are welcome! Feel free to fork this repo and submit pull requests.
 
 🧑‍💻 Author
+---
 Gummala Likhitha
-
+---
 * 🌐 [Live App](https://dayschedular.onrender.com?utm_source=chatgpt.com) 
 * 💻 [GitHub](https://github.com/your-username?utm_source=chatgpt.com)”
 
